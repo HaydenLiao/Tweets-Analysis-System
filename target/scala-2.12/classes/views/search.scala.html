@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>soen 6441 project</title>
+<!--	<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">-->
+	<link rel="stylesheet" href="@routes.Assets.versioned("//apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css")">
+	<script src="@routes.Assets.versioned("javascripts/jquery-3.3.1.min.js")"></script>
+	<style>
+		table, th, td {
+		  border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div class="heading-center">
+	<h1 class="heading-center" style=" text-align:center;">Welcome to Twitter search page! </h1>
+
+		<form id="search">
+	  		<center><input id="search-key" name="search-key" type="text" style=" text-align:center;width:250px; height:25px;" size="40" autocomplete="off" placeholder="Please input your key words here" /></center>
+		<center><input type="submit" value="Submit"></center>
+		</form>
+		 <hr>
+		 <h3 class="heading-center" style=" text-align:center;">This is a project for SOEN 6441 </h3>
+		 <h3 class="heading-center" style=" text-align:center;">Dynamically show latest 10 tweets with search key</h3>
+		 <h4 class="heading-center" style=" text-align:center;">Tianlin Yang 40010303</h4>
+		 <h4 class="heading-center" style=" text-align:center;">Gaoshuo Cui  40085020</h4>
+		 <h4 class="heading-center" style=" text-align:center;">Mengxuan Qiu  40082721</h4>
+		 <h4 class="heading-center" style=" text-align:center;">Haitun Liao   40080732</h4>
+	</div>
+	<div id="search-body">
+
+
+	</div>
+
+	<script src="@routes.Assets.versioned("javascripts/search.js")"></script>
+</body>
+</html>
+
+
+

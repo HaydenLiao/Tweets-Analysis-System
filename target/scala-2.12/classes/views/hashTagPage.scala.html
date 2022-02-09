@@ -1,0 +1,29 @@
+@import models.TweetsResult;
+@(tweets: TweetsResult)
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+    <head>
+        <title>HashTag (@tweets.getSearchKey())</title>
+        <link rel="stylesheet" href="@routes.Assets.versioned("//apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css")">
+        <script src="@routes.Assets.versioned("javascripts/jquery-3.3.1.min.js")"></script>
+        <style>
+		table, th, td {
+		  border: 1px solid black;
+		}
+	    </style>
+    </head>
+    <div class="heading-center">
+    <h1 class="heading-center" style=" text-align:center;">HashTag (@tweets.getSearchKey())</h1>
+    <form id="search">
+	  		<center><input id="search-key" name="search-key" type="text" value = "@tweets.getSearchKey()" style=" text-align:center;width:250px; height:25px;" size="40" autocomplete="on"/></center>
+	<center><input type="submit" value="SEARCH"></center>
+	</form>
+	<div id="search-body">
+	</div>
+    <script src="@routes.Assets.versioned("javascripts/search.js")"></script>
+        <script type="text/javascript">
+        $("#search").submit()
+        </script>
+</html>
+

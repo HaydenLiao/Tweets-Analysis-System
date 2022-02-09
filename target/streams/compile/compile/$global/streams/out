@@ -1,0 +1,2 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\TLIN\Desktop\a2-2\app\Actor\SearchTweetsActor.java:70:1: illegal character: '\'[0m
+[0m[[0m[31merror[0m] [0m[0m										System.out.println("---------------Last result----------------\n"+lastSearchResult+"\n------------------------------------------");\[0m
